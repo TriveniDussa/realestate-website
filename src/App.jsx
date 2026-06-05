@@ -7,6 +7,7 @@
 // export default App;
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './app.css'
 
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";

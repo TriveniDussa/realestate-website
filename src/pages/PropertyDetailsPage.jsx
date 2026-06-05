@@ -134,7 +134,7 @@ function PropertyDetailsPage() {
 
         <div className="details-content">
           <h1>{property.title}</h1>
-          <h3>📍 {property.location}</h3>
+          <h3>{property.location}</h3>
           <h2>{property.price}</h2>
           <p>{property.description}</p>
 

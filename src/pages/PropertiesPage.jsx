@@ -105,7 +105,7 @@ function PropertiesPage() {
                     marginBottom: "10px",
                   }}
                 >
-                  📍 {property.location}
+                   {property.location}
                 </p>
 
                 <h3

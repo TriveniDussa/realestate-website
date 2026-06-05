@@ -68,7 +68,7 @@ function PropertyCard({ id, image, title, location, price }) {
       <div className="property-card">
         <img src={image} alt={title} />
         <h3>{title}</h3>
-        <p>📍 {location}</p>
+        <p> {location}</p>
         <h4>{price}</h4>
 
         <Link to={`/property/${id}`}>

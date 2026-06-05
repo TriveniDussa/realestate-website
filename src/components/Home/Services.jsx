@@ -58,33 +58,33 @@ function Services() {
             className="card"
             onClick={() =>
               setMessage(
-                "🏠 We help customers find and purchase their dream homes with verified listings, legal assistance, and affordable pricing."
+                " We help customers find and purchase their dream homes with verified listings, legal assistance, and affordable pricing."
               )
             }
           >
-            <h3>🏠 Buy Property</h3>
+            <h3> Buy Property</h3>
           </div>
 
           <div
             className="card"
             onClick={() =>
               setMessage(
-                "🏢 Explore rental apartments, villas, and commercial spaces in prime locations at competitive prices."
+                " Explore rental apartments, villas, and commercial spaces in prime locations at competitive prices."
               )
             }
           >
-            <h3>🏢 Rent Property</h3>
+            <h3> Rent Property</h3>
           </div>
 
           <div
             className="card"
             onClick={() =>
               setMessage(
-                "📈 Get expert guidance on real estate investments and discover high-return property opportunities."
+                " Get expert guidance on real estate investments and discover high-return property opportunities."
               )
             }
           >
-            <h3>📈 Investment</h3>
+            <h3> Investment</h3>
           </div>
         </div>
 
