@@ -1,0 +1,103 @@
+.properties {
+  padding: 80px 8%;
+  background: #f8f9fc;
+  text-align: center;
+}
+
+.properties h2 {
+  font-size: 42px;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.property-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.property-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.property-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.property-card:hover img {
+  transform: scale(1.05);
+}
+
+.property-content {
+  padding: 22px;
+  text-align: left;
+}
+
+.property-content h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.property-content p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.property-content h4 {
+  color: #6a11cb;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.property-content button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.property-content button:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .properties {
+    padding: 60px 20px;
+  }
+
+  .properties h2 {
+    font-size: 32px;
+  }
+
+  .property-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .property-card img {
+    height: 180px;
+  }
+}

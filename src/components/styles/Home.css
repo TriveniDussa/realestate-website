@@ -1,0 +1,59 @@
+.navbar {
+  background: #222;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.hero {
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #f4f4f4;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.services {
+  padding: 50px;
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.testimonials {
+  padding: 50px;
+  text-align: center;
+}
