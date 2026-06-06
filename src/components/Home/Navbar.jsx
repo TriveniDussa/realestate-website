@@ -12,31 +12,27 @@ function Navbar() {
           display:flex;
           justify-content:space-between;
           align-items:center;
-          padding:18px 8%;
+          padding:15px 8%;
           background:#fff;
           box-shadow:0 2px 15px rgba(0,0,0,0.1);
           position:sticky;
           top:0;
           z-index:1000;
-          height:70px;
+           height:65px;
         }
 
-        .logo{
-          font-size:28px;
-          font-weight:bold;
-          color:#2c3e50;
-        }
         .logo-container{
           display:flex;
           align-items:center;
           gap:10px;
+          
         }
 
         .logo-img{
           width:80px;
           height:80px;
           object-fit:contain;
-          margin-left:-60px;
+          
         }
 
         .logo{
@@ -44,20 +40,6 @@ function Navbar() {
           font-weight:bold;
           color:#2c3e50;
           margin:0;
-          margin-left:-20px;
-        }
-
-        @media(max-width:768px){
-          .logo-img{
-            width:40px;
-            height:40px;
-            
-
-          }
-
-          .logo{
-            font-size:22px;
-          }
         }
 
         .nav-links{
@@ -73,6 +55,11 @@ function Navbar() {
           color:#333;
           font-size:17px;
           font-weight:500;
+          transition:0.3s;
+        }
+
+        .nav-links a:hover{
+          color:#667eea;
         }
 
         .menu-icon{
@@ -81,6 +68,7 @@ function Navbar() {
           cursor:pointer;
         }
 
+        /* Tablet */
         @media(max-width:768px){
 
           .menu-icon{
@@ -105,15 +93,45 @@ function Navbar() {
             display:flex;
           }
 
+          .logo-img{
+            width:55px;
+            height:55px;
+          }
+
           .logo{
-            font-size:24px;
+            font-size:22px;
+          }
+        }
+
+        /* Mobile */
+        @media(max-width:480px){
+
+          .navbar{
+            padding:12px 5%;
+          }
+
+          .logo-img{
+            width:45px;
+            height:45px;
+          }
+
+          .logo{
+            font-size:18px;
+          }
+
+          .menu-icon{
+            font-size:26px;
           }
         }
       `}</style>
 
       <nav className="navbar">
         <div className="logo-container">
-          <img src={smartplot} alt="Dream Homes Logo" className="logo-img" />
+          <img
+            src={smartplot}
+            alt="Dream Homes Logo"
+            className="logo-img"
+          />
           <h2 className="logo">Dream Homes</h2>
         </div>
 
