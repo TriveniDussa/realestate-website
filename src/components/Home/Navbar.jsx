@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import smartplot from "../../assets/smartplot.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,6 +24,35 @@ function Navbar() {
           font-size:28px;
           font-weight:bold;
           color:#2c3e50;
+        }
+        .logo-container{
+          display:flex;
+          align-items:center;
+          gap:10px;
+        }
+
+        .logo-img{
+          width:50px;
+          height:50px;
+          object-fit:contain;
+        }
+
+        .logo{
+          font-size:28px;
+          font-weight:bold;
+          color:#2c3e50;
+          margin:0;
+        }
+
+        @media(max-width:768px){
+          .logo-img{
+            width:40px;
+            height:40px;
+          }
+
+          .logo{
+            font-size:22px;
+          }
         }
 
         .nav-links{
@@ -77,7 +107,10 @@ function Navbar() {
       `}</style>
 
       <nav className="navbar">
-        <h2 className="logo">Dream Homes</h2>
+        <div className="logo-container">
+          <img src={smartplot} alt="Dream Homes Logo" className="logo-img" />
+          <h2 className="logo">Dream Homes</h2>
+        </div>
 
         <div
           className="menu-icon"
