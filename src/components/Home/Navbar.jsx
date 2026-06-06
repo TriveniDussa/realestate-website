@@ -18,6 +18,7 @@ function Navbar() {
           position:sticky;
           top:0;
           z-index:1000;
+          height:70px;
         }
 
         .logo{
@@ -32,9 +33,10 @@ function Navbar() {
         }
 
         .logo-img{
-          width:50px;
-          height:50px;
+          width:80px;
+          height:80px;
           object-fit:contain;
+          margin-left:-60px;
         }
 
         .logo{
@@ -42,12 +44,15 @@ function Navbar() {
           font-weight:bold;
           color:#2c3e50;
           margin:0;
+          margin-left:-20px;
         }
 
         @media(max-width:768px){
           .logo-img{
             width:40px;
             height:40px;
+            
+
           }
 
           .logo{
